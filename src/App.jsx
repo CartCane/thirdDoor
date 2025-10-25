@@ -8,7 +8,7 @@ import Contact from './pages/Contact'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/thirdDoor'>
       <Header />
       <Routes>
         <Route index element={<Home />}/>
