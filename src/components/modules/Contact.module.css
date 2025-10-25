@@ -36,6 +36,7 @@
     grid-template-rows: auto;
     grid-template-columns: 1;
     padding: 2rem;
+    width: 100%;
 }
 
 .form > p{
