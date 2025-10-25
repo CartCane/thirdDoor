@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 120vh;
+    background-color: #1B1A55;
+    padding: 2rem 12rem;
+    font-size: 1.6rem;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    color: orangered;
+}
+
+.pic{
+    width: 50rem;
+    border-radius: 2rem;
+}

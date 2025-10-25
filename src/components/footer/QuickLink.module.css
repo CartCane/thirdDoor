@@ -1,0 +1,24 @@
+.title{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    border-bottom: .2rem solid yellow;
+    width: 10rem;
+    padding-bottom: .5rem;
+}
+
+.quicklink{
+    height: 100%;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.links >*{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}

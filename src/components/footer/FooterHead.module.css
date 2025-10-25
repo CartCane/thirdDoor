@@ -1,0 +1,25 @@
+.footerHead{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    border-bottom: .1rem solid #FFFFFF80;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+@media(max-width: 767px){
+    .footerHead{
+        grid-template-columns: 1fr;
+        padding: 4rem 2rem;
+        padding-bottom: 10rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .footerHead{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 4rem;
+    }
+}
