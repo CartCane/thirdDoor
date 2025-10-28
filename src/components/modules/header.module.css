@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .header{
     display: flex;
@@ -7,7 +8,8 @@
     gap: 5rem;
     font-size: 1.6rem;
     height: 8rem;
-    background-color: whitesmoke;
+    color: white;
+    background-color: #0A2540;
 }
 .logo{
   font-family: "Pacifico", cursive;
@@ -19,12 +21,12 @@
   background: none;
   fill: black;
   border: none;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .logoLink{
   text-decoration: none;
-  color: black;
+  color: white;  
 }
 
 .nav {
@@ -33,9 +35,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .nav>*{
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .phone{
@@ -68,6 +71,10 @@
 
   .nav{
     display: none;
+  }
+  
+  .nav>*{
+    color: black;
   }
 
   .phone{

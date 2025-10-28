@@ -19,10 +19,10 @@ export default function Header() {
             </span>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about-third-door">About Us</NavLink>
-            <NavLink>Services</NavLink>
-            <NavLink>Job</NavLink>
-            <NavLink>Refer & Earn</NavLink>
-            <NavLink>Partner With Us</NavLink>
+            <NavLink to="">Services</NavLink>
+            <NavLink to="">Job</NavLink>
+            <NavLink to="">Refer & Earn</NavLink>
+            <NavLink to="">Partner With Us</NavLink>
             <NavLink to="/contact-us">Contact</NavLink>
         </ul>
         <h2 className={styles.phone}><a>+91-8088723265</a></h2>

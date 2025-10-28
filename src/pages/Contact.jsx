@@ -17,7 +17,7 @@ export default function Contact() {
         </div>
         <form className={styles.form}>
             <Input placeholder='Your name'/>
-            <Input />
+            <Input placeholder='Phone Number'/>
             <Input placeholder='Email'/>
             <Input placeholder='Reason for contact' required />
             <textarea className={styles.textbox} placeholder="How can we help you?" ></textarea>
