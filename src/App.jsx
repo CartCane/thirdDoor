@@ -5,10 +5,12 @@ import Header from './components/Header'
 import Footer from './components/footer/Footer'
 import LoginPage from './components/features/auth/component/LoginPage'
 import Contact from './pages/Contact'
+import ScrollToTop from './components/features/ScrollToTop'
 
 export default function App() {
   return (
     <BrowserRouter basename='/thirdDoor'>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route index element={<Home />}/>

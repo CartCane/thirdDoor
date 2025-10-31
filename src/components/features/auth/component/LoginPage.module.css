@@ -146,6 +146,14 @@
   }
 }
 
+@media (max-width: 480px){
+  .loginPage {
+    justify-content: space-between;
+    min-height: 50vh;
+    width: 100%;
+  }
+}
+
 
 
 

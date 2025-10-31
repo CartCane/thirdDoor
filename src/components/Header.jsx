@@ -5,6 +5,8 @@ import Login from './features/auth/component/Login'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navContent = [{name: "Home", to: "/"}, {name: "About-us", to: "/about-third-door"}, {name: "Services", to:"/"}, {name: "Job", to: "/"}, {name: "Partner with us", to: "/"}, {name: "Contact", to: "/contact-us"}]
   return (
     <div className={styles.header}>
         <h1 className={styles.logo}>
@@ -17,13 +19,7 @@ export default function Header() {
             >
               &times;
             </span>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about-third-door">About Us</NavLink>
-            <NavLink to="">Services</NavLink>
-            <NavLink to="">Job</NavLink>
-            <NavLink to="">Refer & Earn</NavLink>
-            <NavLink to="">Partner With Us</NavLink>
-            <NavLink to="/contact-us">Contact</NavLink>
+            {navContent.map(item => <NavLink onClick={()=>setIsOpen(false)} to={item.to}>{item.name}</NavLink>)}
         </ul>
         <h2 className={styles.phone}><a>+91-8088723265</a></h2>
         <Login />
