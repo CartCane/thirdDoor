@@ -27,11 +27,11 @@ export default function Header() {
           className={styles.menuBtn}
           onClick={()=>setIsOpen(!isOpen)}
         >
-          <svg width="24" height="24" fill='white'>
+          {!isOpen && <svg width="24" height="24" fill='white'>
             <rect y="4" width="24" height="2" />
             <rect y="11" width="24" height="2" />
             <rect y="18" width="24" height="2" />
-          </svg>
+          </svg>}
         </button>
     </div>
   )
