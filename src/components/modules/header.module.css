@@ -7,9 +7,10 @@
     justify-content: space-around;
     gap: 5rem;
     font-size: 1.6rem;
-    height: 8rem;
-    color: white;
-    background-color: #0A2540;
+    /* height: 8rem; */
+    padding: .5rem 0;
+    color: #0A2540;
+    background-color: whitesmoke;
 }
 .logo{
   font-family: "Pacifico", cursive;
@@ -26,7 +27,7 @@
 
 .logoLink{
   text-decoration: none;
-  color: white;  
+  color: #0A2540;  
 }
 
 .nav {
@@ -36,13 +37,21 @@
 }
 .nav>*{
     font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
     font-weight: 600;
     text-decoration: none;
-    color: white;
+    color: #0A2540;
 }
 
-.phone{
-    font-family: "Pacifico", cursive;
+.contact>*{
+    text-decoration: none;
+    color: #0A2540;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: .3rem solid #0A2540;
+    padding: .5rem 1rem;
+    border-radius: 3rem;
+    font-weight: 700;
 }
 
 .cross{
@@ -54,19 +63,26 @@
 
 @media (max-width: 767px){
   .header{
+    display: flex;
     justify-content: space-between;
     height: auto;
     width: 100%;
     padding: 1rem;
   }
+
+  .mainLogo{
+    display: flex;
+    gap: 1rem;
+  }
   .logo{
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   .menuBtn{
     display: block;
     padding: .1rem .3rem;
     border-radius: .2rem;
+    /* background-color: #0A2540; */
   }
 
   .nav{
@@ -94,7 +110,7 @@
     height: 100%;
     width: 80%;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 10;
   }
 }
