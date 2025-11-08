@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer'
 import LoginPage from './components/features/auth/component/LoginPage'
 import Contact from './pages/Contact'
 import ScrollToTop from './components/features/ScrollToTop'
+import WorkInProgress from './components/WorkInProgress'
 
 export default function App() {
   return (
@@ -14,9 +15,9 @@ export default function App() {
       <Header />
       <Routes>
         <Route index element={<Home />}/>
-        <Route path="about-third-door" element={<About />}/>
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="login" element={<LoginPage />} />
         <Route path="contact-us" element={<Contact />} />
+        <Route path="*" element={<WorkInProgress />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,10 +1,14 @@
 import React from 'react'
 import Highlighter from '../components/Highlighter'
 import Content1 from '../components/Content1'
+import WhyThirdDoor from '../components/Content2'
+import Hero from '../components/Hero'
 
 export default function Home() {
   return (
     <div className="page">
+      <Hero />
+      <WhyThirdDoor />
       <Highlighter />
       <Content1 />
     </div>

@@ -6,7 +6,7 @@ import Login from './features/auth/component/Login'
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navContent = [{name: "Home", to: "/"}, {name: "About-us", to: "/about-third-door"}, {name: "Services", to:"/"}, {name: "Job", to: "/"}, {name: "Partner with us", to: "/"}, {name: "Contact", to: "/contact-us"}]
+  const navContent = [{name: "Home", to: ""}, {name: "About-us", to: "about-third-door"}, {name: "Services", to:"services"}, {name: "Job", to: "Job"}, {name: "Partner with us", to: "Partner-with-us"}, {name: "Contact", to: "contact-us"}]
   return (
     <div className={styles.header}>
         <h1 className={styles.logo}>

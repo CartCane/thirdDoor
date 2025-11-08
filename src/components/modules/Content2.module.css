@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+  gap: 2.5rem;
+  padding: 6rem 2rem;
+  background-color: #EFF0F2;
+}
+
+@media (min-width: 768px) {
+  .section {
+    flex-direction: row;
+    padding: 5rem 5rem;
+  }
+}
+
+.textContainer {
+  width: 100%;
+}
+
+.heading {
+  font-family: "Roboto Slab", serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5rem;
+  color: #05205F;
+  margin-bottom: 1rem;
+}
+
+.subtext {
+  font-size: 2.4rem;
+  font-family: "Libre Baskerville", serif;
+  color: red;
+  width: 50rem;
+  font-style: italic;
+}
+
+.description {
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  color: #05205F;
+  border: .2rem solid #05205F;
+  border-radius: 0.75rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #05205F;
+  color: #fff;
+}
+
+.qContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .imageContainer {
+    width: 50%;
+  }
+}
+
+.image {
+  max-width: 25rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
