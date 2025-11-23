@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 2.4rem;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -16,6 +24,7 @@
 .container > h1{
     width: 30%;
     color: white;
+    margin-bottom: 2rem;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -23,6 +32,7 @@
     width: 50%;
     color: white;
     font-family: "Inter", sans-serif;
+    margin-bottom: 5rem;
 }
 
 .joblist{
@@ -104,14 +114,14 @@
 
     .container > h1{
         width: 80%;
-        font-size: 2.4rem;
+        font-size: 3.8rem;
         margin-bottom: 2rem;
     }
 
     .container>p{
         width: 100%;
-        font-size: 1.4rem;
-        margin-bottom: 5rem;
+        font-size: 2rem;
+        margin-bottom: 8rem;
     }
 
     .cardContainer{

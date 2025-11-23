@@ -15,14 +15,14 @@ function JobHeader(){
         <div className={styles.container}>
             <h1>Guiding Your Path to Prosperity</h1>
             <p>Your career journey is just beginning, and Third-Door is here to open the doors to endless possibilities. With our personalized guidance and industry insights, we help you step into opportunities that lead to growth, fulfillment, and long-term success.</p>
-            <Button fm="'Inter', sans-serif"  fw="600" bg="orange" color="white">Connect with an Expert</Button>
+            <Button fs="1.6rem" fm="'Inter', sans-serif"  fw="600" bg="orange" color="white">Connect with an Expert</Button>
         </div>
     )
 }
 
 function JobList({data}){
 
-    if (!data) return <p>Loading jobs...</p>
+    if (!data) return <p className={styles.loading}>Loading jobs wait for 15 secs...</p>
 
     return(
         <div className={styles.joblist}>
