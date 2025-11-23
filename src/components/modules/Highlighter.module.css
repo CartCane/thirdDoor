@@ -1,109 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
 
-.layout{
-    width: 100%;
-}
-
-.container{
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-around;
-    height: 90vh;
-    background: linear-gradient(to bottom right, #0A2540, #0A2540, #ADD8E6);
-    padding: 8rem 10rem;
-    color: white;
-}
-
-.mainContainer{
-    width: 50rem;
-    row-gap: 2rem;
-    display: flex;
-    flex-basis: auto;
-    flex-direction: column;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-wrap: nowrap;
-}
-
-.mainContainer>h1{
-    font-family: "Roboto Slab", Sans-serif;
-    width: 80%;
-    font-size: 3.4rem;
-    color: white;
-    font-weight: 600;
-    line-height: 5rem;
-}
-
-.mainContainer>p{
-    font-size: 1.6rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    line-height: 2.6rem;
-}
-
-.pic{
-    position: relative;
-    top: -55px;
-    display: flex;
-    align-items: center;
-    align-items: start;
-}
-.pic>img{
-    height: 105%;
-}
-
-.man{
-    background-color: #eee;
-    border-radius: 50%;
-    padding: 1rem;
-    aspect-ratio: 1;
-
-}
-
 .cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     gap: 5rem;
     margin: 5rem;
 }
 
 @media (max-width: 480px) {
-    .container{
-        flex-direction: column;
-        padding: 4rem 2rem;
-        height: auto;
-    }
-
-    .mainContainer{
-        width: 100%;
-        row-gap: 2rem;
-        display: flex;
-        flex-basis: auto;
-        flex-direction: column;
-        flex-grow: 0;
-        flex-shrink: 1;
-        /* flex-wrap: nowrap; */
-    }
-
-    .mainContainer>h1{
-        text-align: center;
-        width: 100%;
-        font-size: 2.4rem;
-        line-height: 2.6rem;
-    }
-
-    .mainContainer>p{
-        font-size: 1.4rem;
-        font-weight: 400;
-        line-height: 2.2rem;
-    }
-
-    .pic{
-        display: none;
-    }
-
     .cards{
-        flex-direction: column;
+        grid-template-columns: 1fr;
         margin: 2rem;
     }
 }

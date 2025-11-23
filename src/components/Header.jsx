@@ -5,7 +5,7 @@ import styles from './modules/header.module.css'
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navContent = [{name: "Home", to: ""}, {name: "About-us", to: "about-third-door"}, {name: "Services", to:"services"}, {name: "Job", to: "Job"}, {name: "Partner with us", to: "Partner-with-us"}, {name: "Contact", to: "contact-us"}]
+  const navContent = [{name: "Home", to: ""}, {name:"Careers", to:"careers"}, {name: "About-us", to: "about-third-door"}, {name: "Jobs", to: "jobs"}, {name: "Partner with us", to: "Partner-with-us"}, {name: "Services", to:"services"}]
   return (
     <div className={styles.header}>
       <div className={styles.mainLogo}>
@@ -30,7 +30,7 @@ export default function Header() {
             >
               &times;
             </span>
-            {navContent.map(item => <NavLink onClick={()=>setIsOpen(false)} to={item.to}>{item.name}</NavLink>)}
+            {navContent.map(item => <NavLink key={item.name} onClick={()=>setIsOpen(false)} to={item.to}>{item.name}</NavLink>)}
         </ul>
 
 

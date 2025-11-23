@@ -7,7 +7,7 @@ export default function QuickLink() {
     <div className={styles.quicklink}>
       <h4 className={styles.title}>Quick Link</h4>
       <ul className={styles.links}>
-        {navContent.map(item => <Link to={item.to}>{item.name}</Link>)}
+        {navContent.map(item => <Link key={item.name} to={item.to}>{item.name}</Link>)}
       </ul>
     </div>
   )

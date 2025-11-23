@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8rem 15rem;
+    background: linear-gradient(to right,#FF937E, #FF5555);
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url("/public/jobs.jpg") center/cover no-repeat;
+}
+
+.container > h1{
+    width: 30%;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+}
+
+.container > p{
+    width: 50%;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.joblist{
+    background-color: lightblue;
+    padding: 0 5rem 2rem;
+}
+
+.joblist > header{
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.card{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    width: 28.5rem;
+    padding: 2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.anchor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    align-items: start;  
+    gap: 2rem;
+}
+
+.anchor > ul{
+    margin-bottom: 3.2rem;
+}
+
+.anchor > ul > li {
+    font-size: 1.2rem;
+}
+
+.activelyLabel{
+    border: .1rem solid #777;
+    font-size: 1.2rem;
+    padding: .2em .6em;
+    border-radius: .5rem;
+    font-weight: 500;
+}
+
+.heading{
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: .1rem solid #333;
+    width: 100%;
+}
+
+.content>span{
+    font-size: 1.2rem;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 480px){
+    .container{
+        font-size: 1rem;
+        padding: 2rem 2rem;
+        /* gap: 1rem; */
+    }
+
+    .container > h1{
+        width: 80%;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .container>p{
+        width: 100%;
+        font-size: 1.4rem;
+        margin-bottom: 5rem;
+    }
+
+    .cardContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+    }
+}
+
