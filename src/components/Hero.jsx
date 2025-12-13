@@ -1,4 +1,5 @@
 import styles from "../components/modules/Hero.module.css"
+import { Link } from "react-router-dom"
 
 export default function Hero() {
   return (
@@ -13,9 +14,9 @@ export default function Hero() {
             </div>
             <div class={styles.buttonBox}>
                 <div class={styles.buttonWrapper}>
-                    <a class={styles.button}>
+                    <Link class={styles.button} to="jobs">
                         <span class="button-text">Explore Opportunities</span>
-                    </a>
+                    </Link>
                 </div>
 			</div>
 		</div>
