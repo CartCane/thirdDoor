@@ -23,9 +23,9 @@ const data=[
         content: "Close career-defining deals with a team that's got your back, selling products customers already love.",
         image: "sales.jpg"
     },
-    {	title: "Project Management",
+    {	title: "Product Management",
         content: "Set clear goals, bring teams together, and deliver work that changes how people get things done.",
-        image: "project management.jpg"
+        image: "productManagement.jpg"
     },
     {
         title: "Presales",
@@ -40,12 +40,12 @@ const data=[
     {
         title: "Project Management",
         content: "Set clear goals, bring teams together, and deliver work that changes how people get things done.",
-        image: "project management.jpg"
+        image: "projectManagement.jpg"
     },
     {
         title: "Corporate Functions",
         content: "You’re not in the background—you’re center stage, keeping us strong, fueling growth, and powering the company every day.",
-        image: "corporate functions.jpg"
+        image: "corporateFunctions.jpg"
     }
 ]
 

@@ -36,6 +36,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route index element={<Home />}/>
+        <Route path="about-third-door" element={<About />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="careers" element={<Career />} />
         <Route path="jobs" element={<Jobs state={state}/>} />
