@@ -35,7 +35,7 @@
     gap: 2.8rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.nav>*{
+.nav>li>*{
     font-family: "Inter", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;

@@ -1,0 +1,62 @@
+.servicesBtn{
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0A2540;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  padding: 0;
+}
+
+.servicesDropdown{
+  position: relative;
+}
+
+.servicesDropdown::after{
+    content: "";
+    position: absolute;
+    top: 100%; left: 0;
+    width: 100%;
+    height: 10px;
+    background: transparent;
+}
+
+.dropdownMenu{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: max-content;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  top: calc(100% + 10px);
+  /* padding: 1rem 0; */
+  color: white;
+  border-radius: .5rem;
+  z-index: 100;
+}
+
+.dropdownMenu>li{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+}
+
+.dropdownMenu > li >*{
+    display: block;
+    padding: .5rem 2rem;
+    list-style: none;
+    text-decoration: none;
+    color: #0A2540;
+}
+
+.dropdownMenu > li:hover {
+    background-color: rgba(10, 37, 64, 0.1); /* subtle overlay */
+    color: #0A2540;           /* can darken text slightly */
+    cursor: pointer;
+    text-decoration: underline;
+}
