@@ -1,10 +1,12 @@
 import styles from '../components/modules/JobHeader.module.css'
 import Button from '../components/Button'
+import JobFilter from '../components/features/JobFilter.jsx'
 
 export default function Jobs({state}) {
   return (
     <div>
         <JobHeader />
+        <JobFilter />
         <JobList data={state}/>
     </div>
   )
