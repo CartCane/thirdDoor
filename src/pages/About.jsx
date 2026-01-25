@@ -1,3 +1,6 @@
+import AboutHero from '../components/features/about-us/AboutHero';
+import AboutValues from '../components/features/about-us/AboutValues';
+import Founder from '../components/features/about-us/Founder';
 import styles from '../components/modules/About-us.module.css';
 
 export default function About() {
@@ -6,35 +9,9 @@ export default function About() {
       <div className={styles.title}>
         <h1>About Third Door</h1>
       </div>
-      <div className={styles.content}>
-        <div className={styles.image}>
-          <img src="/thirdDoor/about.jpg" alt="About Third Door"/>
-        </div>
-        <div className={styles.text}>
-          <h1>Opening the Third Door to Smarter Growth</h1>
-          <p>Third Door is a company dedicated to helping businesses grow smarter and more efficiently through innovative solutions and strategic partnerships. It helps businesses move forward with clarity and confidence. We bring together technology, strategy, and human insight to solve complex challenges, protect what matters, and build systems that scale with integrity.</p>
-        </div>
-      </div>
-      <div className={styles.values}>
-        <div className={styles.valuesHeader}>
-          <h2>Our Values</h2>
-          <button className={styles.careersButton}>View Careers</button>
-        </div>
-        <div className={styles.valueList}>
-          <div className={styles.valueItem}>
-            <h3>Connection</h3>
-            <p>Building meaningful relationships with clients, partners, and team members to foster trust and collaboration.</p>
-          </div>
-          <div className={styles.valueItem}>
-            <h3>Congruence</h3>
-            <p>Ensuring alignment between our actions, values, and outcomes to create a cohesive and authentic experience for all stakeholders.</p>
-          </div>
-          <div className={styles.valueItem}>
-            <h3>Commitment</h3>
-            <p>Dedicated to delivering exceptional results and continuously improving to meet the evolving needs of our clients and the market.</p>
-          </div>
-        </div>
-      </div>
+      <AboutHero />
+      <AboutValues />
+      <Founder />
       <div className={styles.policies}>
         <div>
           <h2 className={styles.missionTitle}>Our Mission</h2>
