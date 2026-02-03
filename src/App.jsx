@@ -31,7 +31,7 @@ export default function App() {
       fetchData();
   }, [])
   return (
-    <BrowserRouter basename='/thirdDoor'>
+    <BrowserRouter>
       <ScrollToTop />
       <Header />
       <Routes>
