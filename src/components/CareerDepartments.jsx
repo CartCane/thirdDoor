@@ -54,7 +54,7 @@ export default function CareerDepartments(){
         <div className={styles.container}>
             {data.map((pro) => 
                 <div className="container">
-                    <Cards head={pro.title} description={pro.content} image={`/thirdDoor/careers/${pro.image}`} fsize=".7rem"/>
+                    <Cards head={pro.title} description={pro.content} image={`/careers/${pro.image}`} fsize=".7rem"/>
                 </div>)
             }
         </div>
