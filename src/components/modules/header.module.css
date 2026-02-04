@@ -13,7 +13,7 @@
     background-color: whitesmoke;
 }
 .logo{
-  font-family: "Pacifico", cursive;
+  font-family: 'Times New Roman', Times, serif;
   margin-left: 5rem;  
 }
 
@@ -26,6 +26,8 @@
 }
 
 .logoLink{
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   color: #0A2540;  
 }

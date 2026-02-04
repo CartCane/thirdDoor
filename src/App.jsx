@@ -10,6 +10,7 @@ import ScrollToTop from './components/features/ScrollToTop'
 import WorkInProgress from './components/WorkInProgress'
 import Career from './pages/Career'
 import Jobs from './pages/Jobs'
+import ChatSupport from './components/features/chat support/ChatSupport'
 
 export default function App() {
   const [state, setState] = useState();
@@ -43,6 +44,7 @@ export default function App() {
         <Route path="contact-us" element={<Contact />} />
         <Route path="*" element={<WorkInProgress />} />
       </Routes>
+      <ChatSupport />
       <Footer />
     </BrowserRouter>
   )

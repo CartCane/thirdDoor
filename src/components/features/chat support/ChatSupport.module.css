@@ -1,0 +1,19 @@
+.chatSupportContainer{
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.chatSupportImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
