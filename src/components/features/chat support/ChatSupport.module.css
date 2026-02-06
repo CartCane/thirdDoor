@@ -17,3 +17,22 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+
+
+
+@media (max-width: 767px){
+    .chatSupportContainer{
+        bottom: 2.5rem;
+        right: 2.5rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .chatSupportImage{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

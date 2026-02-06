@@ -13,8 +13,6 @@ export default function ContactInfo() {
         icon={<Building />}
         description="Main office location"
       />
-        
-
     </div>
   )
 }

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+    gap: 5rem;
     border-bottom: .1rem solid #FFFFFF80;
     padding-top: 4rem;
     padding-bottom: 4rem;
