@@ -40,7 +40,7 @@ const data=[
     {
         title: "Project Management",
         content: "Set clear goals, bring teams together, and deliver work that changes how people get things done.",
-        image: "projectManagement.jpg"
+        image: "" //projectManagement.jpg
     },
     {
         title: "Corporate Functions",
@@ -54,7 +54,7 @@ export default function CareerDepartments(){
         <div className={styles.container}>
             {data.map((pro) => 
                 <div className="container">
-                    <Cards head={pro.title} description={pro.content} image={`/careers/${pro.image}`} fsize=".7rem"/>
+                    <Cards head={pro.title} description={pro.content} image={pro.image ? `/careers/${pro.image}` : "https://res.cloudinary.com/dhext9b0b/image/upload/v1765559827/project_management_trzd9z.jpg"} fsize=".7rem"/>
                 </div>)
             }
         </div>
